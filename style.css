@@ -1,0 +1,14 @@
+/* 共通スタイル: ビルド不要・外部読み込みなし(外部トラッキングなし)。スマホ優先の1カラム。 */
+:root { --bg:#fafaf8; --fg:#18191c; --sub:#5b5d63; --line:#dcdbd6; --accent:#2f58d6; }
+@media (prefers-color-scheme: dark) { :root { --bg:#111214; --fg:#f2f2f0; --sub:#a4a6ab; --line:#34363b; --accent:#93b1ff; } }
+* { box-sizing: border-box; }
+body { margin:0; font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.8; color:var(--fg); background:var(--bg); }
+header, main, footer { max-width:720px; margin:0 auto; padding:0 16px; }
+header { padding-top:20px; padding-bottom:12px; border-bottom:1px solid var(--line); display:flex; flex-wrap:wrap; gap:8px 20px; align-items:baseline; }
+header .brand { font-weight:700; font-size:1.15rem; color:var(--fg); text-decoration:none; margin-right:auto; }
+nav a { margin-right:14px; color:var(--accent); text-decoration:none; }
+main { padding-top:24px; padding-bottom:48px; }
+h1 { font-size:1.6rem; line-height:1.4; } h2 { font-size:1.2rem; margin-top:2rem; }
+a { color:var(--accent); } .sub { color:var(--sub); }
+.card { border:1px solid var(--line); border-radius:12px; padding:4px 16px 12px; margin:16px 0; }
+footer { padding-top:16px; padding-bottom:40px; border-top:1px solid var(--line); color:var(--sub); font-size:.9rem; }
